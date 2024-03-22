@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode - Light Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="card">
+        <div class="box">
+            <div class="circle" id="circle"></div>
+        </div>
+    </section>
+
+    <script>
+        const body = document.body
+        const circle = document.getElementById('circle').addEventListener('click', () => {
+            if(body.style.background == 'grey') {
+                body.style.background = 'aliceblue'
+            } else {
+                body.style.background = 'grey'
+            }
+        })
+    </script>
+</body>
+</html>

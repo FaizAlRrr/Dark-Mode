@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-weight: 600;
+}
+
+.card {
+    width: 60%;
+    height: 70vh;
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: fixed; /* Menetapkan posisi menjadi tetap untuk mengatur ke tengah layar */
+    top: 50%; /* Menetapkan posisi atas pada 50% tinggi layar */
+    left: 50%; /* Menetapkan posisi kiri pada 50% lebar layar */
+    transform: translate(-50%, -50%); /* Menggeser elemen ke kiri sebesar 50% dari lebar dan ke atas sebesar 50% dari tinggi */
+    box-shadow: 4px 3px 30px rgba(0, 65, 206, 0.658);
+}
+
+.card .box {
+    width: 150px;
+    height: 55px;
+    background: #6e6464;
+    position: relative;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.card .box .circle {
+    position: absolute; /* Menetapkan posisi absolut untuk elemen .circle */
+    top: 10px; /* Menentukan jarak dari atas */
+    left: 10px; /* Menentukan jarak dari kiri */
+    background-color: white;
+    width: 50px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
